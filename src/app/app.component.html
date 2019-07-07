@@ -1,20 +1,297 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="container">
+  <p class="text-center">Resume Builder</p>
 
+
+
+</div>
+
+<div class="container">
+    <div id="accordion">
+        <div class="card">
+          <div class="card-header bg-dark " id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link text-white" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Header
+              </button>
+            </h5>
+          </div>
+      
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                  <table style="width:100%" >
+                      <tr>
+                        <td></td>
+                        <td>
+                            <div class="form-group ">
+                                <input type="text" class="form-control" id="fullname"  [(ngModel)]="resume.fullname" placeholder="Full name">
+                              </div>
+                        </td> 
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td><div class="form-group ">
+                            <input type="text" class="form-control" id="Address"  [(ngModel)]="resume.address"  placeholder="Address">
+                          </div></td>
+                        <td><div class="form-group ">
+                            <input type="text" class="form-control" id="Website"  [(ngModel)]="resume.website" placeholder="Website">
+                          </div></td> 
+                        <td><div class="form-group ">
+                            <input type="text" class="form-control" id="emailaddress"  [(ngModel)]="resume.emailAddress" placeholder="Emailaddress">
+                          </div></td>
+                      </tr>
+                      <tr>
+                          <td><div class="form-group ">
+                              <input type="text" class="form-control" id="phonenumber"  [(ngModel)]="resume.phoneNumber" placeholder="Phonenumber">
+                            </div></td>
+                          <td><div class="form-group ">
+                              <input type="text" class="form-control" id="Github" [(ngModel)]="resume.github"  placeholder="Github">
+                            </div></td> 
+                          <td><div class="form-group ">
+                              <input type="text" class="form-control" id="linkedIn"  [(ngModel)]="resume.linkedin" placeholder="LinkedIn">
+                            </div></td>
+                        </tr>
+                    </table>
+              </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header  bg-dark" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed text-white" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Education
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                  <p>University 1</p>
+                  <table style="width:100%">
+                      <tr>
+                          <td><div class="form-group ">
+                              <input type="text" class="form-control" id="universityName" [(ngModel)]="resume.unvName" placeholder="University">
+                            </div></td>
+                          <td><div class="form-group ">
+                              <input type="text" class="form-control" id="Period" [(ngModel)]="resume.unvPeriod" placeholder="Period">
+                            </div></td>
+                      </tr>
+                      <tr>
+                        <td><div class="form-group ">
+                            <input type="text" class="form-control" id="degree" [(ngModel)]="resume.unvDegree" placeholder="Degree">
+                          </div></td>
+                        <td><div class="form-group ">
+                            <input type="text" class="form-control" id="course" [(ngModel)]="resume.unvCourse" placeholder="Course">
+                          </div></td>
+                    </tr>
+                      <tr>
+                          <td><div class="form-group ">
+                              <input type="text" class="form-control" id="UnvAddress" [(ngModel)]="resume.unvAddress"  placeholder="Address">
+                            </div></td>
+                          <td><div class="form-group ">
+                              <input type="text" class="form-control" id="Gpa"  [(ngModel)]="resume.unvGpa" placeholder="Gpa">
+                            </div></td> 
+                      </tr>
+                    </table>
+                    <p>University 2 (Optional)</p>
+                  <table style="width:100%">
+                      <tr>
+                          <td><div class="form-group ">
+                              <input type="text" class="form-control" id="universityName" [(ngModel)]="resume.unvName1"  placeholder="University">
+                            </div></td>
+                          <td><div class="form-group ">
+                              <input type="text" class="form-control" id="Period" [(ngModel)]="resume.unvPeriod1" placeholder="Period">
+                            </div></td>
+                      </tr>
+                      <tr>
+                        <td><div class="form-group ">
+                            <input type="text" class="form-control" id="degree" [(ngModel)]="resume.unvDegree1" placeholder="Degree">
+                          </div></td>
+                        <td><div class="form-group ">
+                            <input type="text" class="form-control" id="course" [(ngModel)]="resume.unvCourse1" placeholder="Course">
+                          </div></td>
+                    </tr>
+                      <tr>
+                          <td><div class="form-group ">
+                              <input type="text" class="form-control" id="UnvAddress" [(ngModel)]="resume.unvAddress1" placeholder="Address">
+                            </div></td>
+                          <td><div class="form-group ">
+                              <input type="text" class="form-control" id="Gpa" [(ngModel)]="resume.unvGpa1" placeholder="Gpa">
+                            </div></td> 
+                      </tr>
+                    </table>
+              </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header  bg-dark" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed text-white" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Experience
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                <p>Company 1</p>
+                  <table style="width:100%">
+                      <tr>
+                          <td><div class="form-group ">
+                              <input type="text" class="form-control" id="companyName" [(ngModel)]="resume.compName" placeholder="Company">
+                            </div></td>
+                          <td><div class="form-group ">
+                              <input type="text" class="form-control" id="compPeriod" [(ngModel)]="resume.compPeriod"  placeholder="Period">
+                            </div></td>
+                      </tr>
+                      <tr>
+                        <td><div class="form-group ">
+                            <input type="text" class="form-control" id="companyRole" [(ngModel)]="resume.compRole" placeholder="Job Role">
+                          </div></td>
+                        <td><div class="form-group ">
+                            <input type="text" class="form-control" id="compaddress" [(ngModel)]="resume.compAddress"  placeholder="Address">
+                          </div></td>
+                    </tr>
+                      <tr>
+                          <td colspan="2"><div class="form-group ">
+                              <textarea type="text" class="form-control" id="responsibilities" [(ngModel)]="resume.compResp" placeholder="Responsibilities"></textarea>
+                            </div>
+                          </td>
+                      </tr>
+                    </table>
+                    <p>Company 2 (Optional)</p>
+                    <table style="width:100%">
+                        <tr>
+                            <td><div class="form-group ">
+                                <input type="text" class="form-control" id="companyName" [(ngModel)]="resume.compName1" placeholder="Company">
+                              </div></td>
+                            <td><div class="form-group ">
+                                <input type="text" class="form-control" id="compPeriod" [(ngModel)]="resume.compPeriod1" placeholder="Period">
+                              </div></td>
+                        </tr>
+                        <tr>
+                          <td><div class="form-group ">
+                              <input type="text" class="form-control" id="companyRole" [(ngModel)]="resume.compRole1" placeholder="Job Role">
+                            </div></td>
+                          <td><div class="form-group ">
+                              <input type="text" class="form-control" id="compaddress" [(ngModel)]="resume.compAddress1"  placeholder="Address">
+                            </div></td>
+                      </tr>
+                        <tr>
+                            <td colspan="2"><div class="form-group ">
+                                <textarea type="text" class="form-control" id="responsibilities" [(ngModel)]="resume.compResp1" placeholder="Responsibilities"></textarea>
+                              </div>
+                            </td>
+                        </tr>
+                      </table>
+              </div>
+          </div>
+        </div>
+        <div class="card">
+            <div class="card-header  bg-dark" id="headingFour">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed  text-white" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Skills
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body">
+                    <table style="width:100%">
+                        <tr>
+                            <td><div class="form-group ">
+                                <input type="text" class="form-control" id="category" [(ngModel)]="resume.skilCategory"  placeholder="Category">
+                              </div></td>
+                            <td><div class="form-group ">
+                                <input type="text" class="form-control" id="skills" [(ngModel)]="resume.skillNames"  placeholder="Skills">
+                              </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div class="form-group ">
+                                <input type="text" class="form-control" id="category" [(ngModel)]="resume.skilCategory1" placeholder="Category">
+                              </div></td>
+                            <td><div class="form-group ">
+                                <input type="text" class="form-control" id="skills" [(ngModel)]="resume.skillNames1"  placeholder="Skills">
+                              </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div class="form-group ">
+                                <input type="text" class="form-control" id="category" [(ngModel)]="resume.skilCategory2" placeholder="Category">
+                              </div></td>
+                            <td><div class="form-group ">
+                                <input type="text" class="form-control" id="skills" [(ngModel)]="resume.skillNames2" placeholder="Skills">
+                              </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div class="form-group ">
+                                <input type="text" class="form-control" id="category" [(ngModel)]="resume.skilCategory3" placeholder="Category">
+                              </div></td>
+                            <td><div class="form-group ">
+                                <input type="text" class="form-control" id="skills" [(ngModel)]="resume.skillNames3" placeholder="Skills">
+                              </div>
+                            </td>
+                        </tr>
+                      </table>
+                </div>
+            </div>
+          </div>
+          <div class="card">
+              <div class="card-header  bg-dark" id="headingFive">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed  text-white" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Projects
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                  <div class="card-body">
+                      <p>Project 1</p>
+                      <table style="width:100%">
+                          <tr>
+                              <td><div class="form-group ">
+                                  <input type="text" class="form-control" id="projectName" [(ngModel)]="resume.projName" placeholder="Project Name">
+                                </div></td>
+                          </tr>
+                          <tr>
+                              <td><div class="form-group ">
+                                  <textarea type="text" class="form-control" id="description" [(ngModel)]="resume.projDesc" placeholder="Description" ></textarea>
+                                </div></td>
+                          </tr>
+                          <tr>
+                            <td><div class="form-group ">
+                                <textarea type="text" class="form-control" id="technologies" [(ngModel)]="resume.projTech" placeholder="Technologies used" ></textarea>
+                              </div></td>
+                        </tr>
+                        </table>
+                        <p>Project 2 (Optional)</p>
+                        <table style="width:100%">
+                          <tr>
+                              <td><div class="form-group ">
+                                  <input type="text" class="form-control" id="projectName" [(ngModel)]="resume.projName1" placeholder="Project Name">
+                                </div></td>
+                          </tr>
+                          <tr>
+                            <td><div class="form-group ">
+                                <textarea type="text" class="form-control" id="technologies" [(ngModel)]="resume.projTech1" placeholder="Technologies used" ></textarea>
+                              </div></td>
+                        </tr>
+                          <tr>
+                              <td><div class="form-group ">
+                                  <textarea type="text" class="form-control" id="description" [(ngModel)]="resume.projDesc1" placeholder="Description" ></textarea>
+                                </div></td>
+                          </tr>
+                        </table>
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+          <div class="card-footer">
+              <button class="btn btn-dark float-right collapsed  text-white"(click) ="createpdf()">
+                  Create PDF
+                </button>
+            </div>
+        
+        </div>
+</div>
