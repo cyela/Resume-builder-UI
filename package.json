@@ -24,7 +24,8 @@
     "rxjs": "6.0.0",
     "zone.js": "^0.8.26",
     "ws": ">=3.3.1",
-    "adm-zip": ">=0.4.11"
+    "adm-zip": ">=0.4.11",
+    "lodash": ">=4.17.13"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.6.8",
