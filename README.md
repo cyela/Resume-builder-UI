@@ -1,8 +1,11 @@
-# ResumeBuilder
+# Resume Builder UI
+Resume builder UI application provides interactive user interface to collect and provide a downloadable PDF version of his/her resume. This project provides front end user interface which uses (https://github.com/cyela/Resume-Builder) API services generate pdf version resume
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+#### Screenshot
+![Image of screenshot](https://github.com/cyela/Resume-builder-UI/tree/master/src/assets/images/ResumeBuilder.JPG)
 
 ## Development server
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
